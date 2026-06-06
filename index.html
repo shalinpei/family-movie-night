@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Family Movie Night — browse and launch your favorite shows" />
+  <title>Family Movie Night</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Family Movie Night</h1>
+    <button id="theme-toggle" aria-label="Toggle theme">Switch Theme</button>
+  </header>
+
+  <main>
+    <nav class="sort-controls" aria-label="Sort options">
+      <button class="sort-btn active" data-sort="popular">Most Popular</button>
+      <button class="sort-btn" data-sort="recent">Recently Added</button>
+      <button class="sort-btn" data-sort="alpha">Alphabetical</button>
+    </nav>
+
+    <section id="card-grid" aria-label="Show cards"></section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Family Movie Night</p>
+  </footer>
+
+  <script type="module" src="db.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

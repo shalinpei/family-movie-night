@@ -37,6 +37,11 @@ jobs:
           echo "config.js size: $(wc -c < config.js)"
           cat config.js
 
+      - name: Include config.js in deployment
+        run: |
+          echo "config.js" >> .gitignore-backup
+          sed -i '/config.js/d' .gitignore
+
       - name: Configure Pages
         uses: actions/configure-pages@v4
 

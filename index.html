@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <script>try{if(localStorage.getItem('theme')==='blockbuster'){document.body.classList.add('blockbuster');document.addEventListener('DOMContentLoaded',function(){var h=document.getElementById('theme-hint');if(h)h.textContent='🌙';});}}catch(e){}</script>
   <header>
     <h1>Family Movie Night</h1>
-    <button id="theme-toggle" aria-label="Toggle theme">Switch Theme</button>
   </header>
 
   <main>
@@ -24,8 +24,10 @@
   </main>
 
   <footer>
-    <p>&copy; 2026 Family Movie Night</p>
+    <span id="theme-hint">Be Kind, Rewind</span>
   </footer>
+
+  <div id="vhs-overlay" aria-hidden="true"></div>
 
   <script type="module" src="db.js"></script>
   <script type="module" src="script.js"></script>

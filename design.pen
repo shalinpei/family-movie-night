@@ -1,5 +1,1170 @@
 {
-  "version": "2.6",
+  "version": "2.13",
+  "children": [
+    {
+      "type": "frame",
+      "id": "la7iS",
+      "x": 0,
+      "y": 0,
+      "name": "DreamyCard",
+      "reusable": true,
+      "clip": true,
+      "width": 260,
+      "height": 390,
+      "fill": "$card-bg",
+      "cornerRadius": "$radius-card",
+      "stroke": "$card-border",
+      "strokeWidth": 1,
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "njUv9",
+          "x": 0,
+          "y": 0,
+          "name": "CardImage",
+          "width": 260,
+          "height": 300,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#0d0221",
+                "position": 0
+              },
+              {
+                "color": "#6b2fa0",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "frame",
+          "id": "aKCUo",
+          "x": 0,
+          "y": 180,
+          "name": "GradientOverlay",
+          "width": 260,
+          "height": 210,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#0d022100",
+                "position": 0
+              },
+              {
+                "color": "#0d0221f2",
+                "position": 0.5
+              },
+              {
+                "color": "#0d0221",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "frame",
+          "id": "oPvU2",
+          "x": 12,
+          "y": 318,
+          "name": "CardLabel",
+          "width": 236,
+          "layout": "vertical",
+          "gap": 4,
+          "children": [
+            {
+              "type": "text",
+              "id": "w2ObeJ",
+              "name": "CardTitle",
+              "fill": "$text-primary",
+              "content": "Show Title",
+              "fontFamily": "Nunito",
+              "fontSize": 14,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "IoP9C",
+              "name": "CardPlatform",
+              "fill": "$text-secondary",
+              "content": "DISNEY+",
+              "fontFamily": "Nunito",
+              "fontSize": 11,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "DdQ5S",
+      "x": 300,
+      "y": 0,
+      "name": "BlockbusterCard",
+      "reusable": true,
+      "clip": true,
+      "width": 260,
+      "height": 390,
+      "fill": "$bb-card-bg",
+      "cornerRadius": 4,
+      "stroke": "$bb-gold",
+      "strokeWidth": 2,
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "k7lL7",
+          "x": 0,
+          "y": 0,
+          "name": "CardImage",
+          "width": 260,
+          "height": 300,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#05050f",
+                "position": 0
+              },
+              {
+                "color": "#0d1340",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "frame",
+          "id": "D3D8up",
+          "x": 0,
+          "y": 180,
+          "name": "GradientOverlay",
+          "width": 260,
+          "height": 210,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#0a0a2e00",
+                "position": 0
+              },
+              {
+                "color": "#0a0a2ef0",
+                "position": 0.38
+              },
+              {
+                "color": "#0a0a2e",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "frame",
+          "id": "E12bfb",
+          "x": 12,
+          "y": 318,
+          "name": "CardLabel",
+          "width": 236,
+          "layout": "vertical",
+          "gap": 4,
+          "children": [
+            {
+              "type": "text",
+              "id": "ePmdi",
+              "name": "CardTitle",
+              "fill": "#ffffff",
+              "content": "SHOW TITLE",
+              "fontFamily": "Bebas Neue",
+              "fontSize": 18,
+              "fontWeight": "normal",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "MVRr6",
+              "name": "CardPlatform",
+              "fill": "$bb-gold",
+              "content": "DISNEY+",
+              "fontFamily": "Nunito",
+              "fontSize": 11,
+              "fontWeight": "600",
+              "letterSpacing": 1.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "hlyXL",
+      "x": 0,
+      "y": 470,
+      "name": "Dreamy Wonderland",
+      "clip": true,
+      "width": 1200,
+      "height": 1400,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "linear",
+        "enabled": true,
+        "rotation": 145,
+        "size": {
+          "height": 1
+        },
+        "colors": [
+          {
+            "color": "$bg-start",
+            "position": 0
+          },
+          {
+            "color": "$bg-mid",
+            "position": 0.45
+          },
+          {
+            "color": "$bg-end",
+            "position": 1
+          }
+        ]
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "ie1mc",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 120,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "Aoo79",
+              "x": 0,
+              "y": 40,
+              "name": "Title",
+              "fill": "$text-primary",
+              "content": "Family Movie Night",
+              "textAlign": "center",
+              "fontFamily": "Pacifico",
+              "fontSize": 48,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "Q4nwX",
+              "x": 980,
+              "y": 24,
+              "name": "ThemeToggle",
+              "width": 180,
+              "height": 40,
+              "fill": "#FFFFFF1f",
+              "cornerRadius": 50,
+              "stroke": "#FFFFFF40",
+              "strokeWidth": 1,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jw2Eu",
+                  "name": "ThemeToggleLabel",
+                  "fill": "$text-primary",
+                  "content": "📼 Blockbuster",
+                  "fontFamily": "Nunito",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "aVgQY",
+          "name": "SortControls",
+          "width": "fill_container",
+          "gap": 10,
+          "padding": [
+            12,
+            24,
+            24,
+            24
+          ],
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "F36jMR",
+              "name": "Sort-Most Popular",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 135,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#e879f959",
+                    "position": 0
+                  },
+                  {
+                    "color": "#8b5cf659",
+                    "position": 1
+                  }
+                ]
+              },
+              "cornerRadius": 50,
+              "stroke": "#e879f9b3",
+              "strokeWidth": 1,
+              "padding": [
+                8,
+                18
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "FrtqA",
+                  "name": "Label",
+                  "fill": "$text-primary",
+                  "content": "Most Popular",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "G24Lip",
+              "name": "Sort-Recently Added",
+              "fill": "#FFFFFF14",
+              "cornerRadius": 50,
+              "stroke": "#FFFFFF2e",
+              "strokeWidth": 1,
+              "padding": [
+                8,
+                18
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "WTXkb",
+                  "name": "Label",
+                  "fill": "$text-secondary",
+                  "content": "Recently Added",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "BEE0x",
+              "name": "Sort-Alphabetical",
+              "fill": "#FFFFFF14",
+              "cornerRadius": 50,
+              "stroke": "#FFFFFF2e",
+              "strokeWidth": 1,
+              "padding": [
+                8,
+                18
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "gilZZ",
+                  "name": "Label",
+                  "fill": "$text-secondary",
+                  "content": "Alphabetical",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LUdW3",
+          "name": "Main",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            0,
+            32,
+            32,
+            32
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "nKvju",
+              "name": "CardGrid",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "gU5XQ",
+                  "name": "CardRow1",
+                  "width": "fill_container",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "id": "VXDwx",
+                      "type": "ref",
+                      "ref": "la7iS",
+                      "name": "Bluey",
+                      "descendants": {
+                        "njUv9": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://lumiere-a.akamaihd.net/v1/images/p_bluey_19703_en_us_360x540_54a5827e.jpeg",
+                            "mode": "fill"
+                          }
+                        },
+                        "w2ObeJ": {
+                          "content": "Bluey"
+                        },
+                        "IoP9C": {
+                          "content": "DISNEY+"
+                        }
+                      }
+                    },
+                    {
+                      "id": "kNULS",
+                      "type": "ref",
+                      "ref": "la7iS",
+                      "name": "Frozen",
+                      "descendants": {
+                        "njUv9": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://lumiere-a.akamaihd.net/v1/images/p_frozen_19736_en_us_360x540.jpeg",
+                            "mode": "fill"
+                          }
+                        },
+                        "w2ObeJ": {
+                          "content": "Frozen"
+                        },
+                        "IoP9C": {
+                          "content": "DISNEY+"
+                        }
+                      }
+                    },
+                    {
+                      "id": "SQDRq",
+                      "type": "ref",
+                      "ref": "la7iS",
+                      "name": "Moana",
+                      "descendants": {
+                        "njUv9": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://lumiere-a.akamaihd.net/v1/images/p_moana_19736_en_us_360x540.jpeg",
+                            "mode": "fill"
+                          }
+                        },
+                        "w2ObeJ": {
+                          "content": "Moana"
+                        },
+                        "IoP9C": {
+                          "content": "DISNEY+"
+                        }
+                      }
+                    },
+                    {
+                      "id": "r4Dwjj",
+                      "type": "ref",
+                      "ref": "la7iS",
+                      "name": "Aladdin",
+                      "descendants": {
+                        "njUv9": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://lumiere-a.akamaihd.net/v1/images/p_aladdin_19736_en_us_360x540.jpeg",
+                            "mode": "fill"
+                          }
+                        },
+                        "w2ObeJ": {
+                          "content": "Aladdin"
+                        },
+                        "IoP9C": {
+                          "content": "DISNEY+"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "qTY71",
+                  "name": "CardRow2",
+                  "width": "fill_container",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "id": "pGwM7",
+                      "type": "ref",
+                      "ref": "la7iS",
+                      "name": "K-Pop Demon Hunters",
+                      "descendants": {
+                        "njUv9": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABT6pTMpLGPaTSRSVg7BKlvMlkKGcASbMsB9i1-RCH7Gp2UtJb8QfJBZXGnZ5h7PGHGF.jpg",
+                            "mode": "fill"
+                          }
+                        },
+                        "w2ObeJ": {
+                          "content": "K-Pop Demon Hunters"
+                        },
+                        "IoP9C": {
+                          "content": "NETFLIX"
+                        }
+                      }
+                    },
+                    {
+                      "id": "jiKP5",
+                      "type": "ref",
+                      "ref": "la7iS",
+                      "name": "Puffin Rock",
+                      "descendants": {
+                        "njUv9": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXEd8BSdvP4bBTH0kJKRTJmr.jpg",
+                            "mode": "fill"
+                          }
+                        },
+                        "w2ObeJ": {
+                          "content": "Puffin Rock"
+                        },
+                        "IoP9C": {
+                          "content": "NETFLIX"
+                        }
+                      }
+                    },
+                    {
+                      "id": "R2gSo",
+                      "type": "ref",
+                      "ref": "la7iS",
+                      "name": "Numberblocks",
+                      "descendants": {
+                        "njUv9": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQbwbk1nNkQRSmkPmDGW5RwH.jpg",
+                            "mode": "fill"
+                          }
+                        },
+                        "w2ObeJ": {
+                          "content": "Numberblocks"
+                        },
+                        "IoP9C": {
+                          "content": "NETFLIX"
+                        }
+                      }
+                    },
+                    {
+                      "id": "d2ziT",
+                      "type": "ref",
+                      "ref": "la7iS",
+                      "name": "Coming Soon",
+                      "opacity": 0.55,
+                      "descendants": {
+                        "w2ObeJ": {
+                          "content": "Coming Soon",
+                          "fill": "$text-secondary"
+                        },
+                        "IoP9C": {
+                          "content": ""
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "d4aUj",
+          "name": "Footer",
+          "width": "fill_container",
+          "padding": [
+            24,
+            24,
+            32,
+            24
+          ],
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "b4GCeL",
+              "name": "Copyright",
+              "fill": "$text-secondary",
+              "content": "© 2026 Family Movie Night",
+              "fontFamily": "Nunito",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "lgOM2",
+      "x": 1280,
+      "y": 470,
+      "name": "Blockbuster Friday",
+      "clip": true,
+      "width": 1200,
+      "height": 1600,
+      "fill": "$bb-bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "aqhmj",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 160,
+          "fill": "$bb-blue",
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "OVmLW",
+              "x": 0,
+              "y": 0,
+              "name": "YellowStripe",
+              "width": 1200,
+              "height": 14,
+              "fill": "$bb-gold"
+            },
+            {
+              "type": "text",
+              "id": "Nl9xQ",
+              "x": 0,
+              "y": 50,
+              "name": "Title",
+              "fill": "$bb-gold",
+              "content": "Family Movie Night",
+              "textAlign": "center",
+              "fontFamily": "Bebas Neue",
+              "fontSize": 72,
+              "fontWeight": "normal",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "Ee2g0",
+              "x": 0,
+              "y": 120,
+              "name": "Subheader",
+              "fill": "#FFD700cc",
+              "content": "YOUR NEIGHBORHOOD VIDEO STORE",
+              "textAlign": "center",
+              "fontFamily": "Nunito",
+              "fontSize": 14,
+              "fontWeight": "700",
+              "letterSpacing": 4
+            },
+            {
+              "type": "frame",
+              "id": "nG6zD",
+              "x": 980,
+              "y": 50,
+              "name": "ThemeToggle",
+              "width": 160,
+              "height": 40,
+              "fill": "$bb-gold",
+              "cornerRadius": 4,
+              "stroke": "$bb-bg",
+              "strokeWidth": 2,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "eKhCy",
+                  "name": "ThemeToggleLabel",
+                  "fill": "$bb-bg",
+                  "content": "🌙 Dreamy",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "900"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "csdG2",
+          "name": "HeaderBorder",
+          "width": "fill_container",
+          "height": 6,
+          "fill": "$bb-gold"
+        },
+        {
+          "type": "frame",
+          "id": "wO4M6",
+          "name": "SortControls",
+          "width": "fill_container",
+          "fill": "$bb-bg",
+          "stroke": "$bb-gold",
+          "strokeWidth": 3,
+          "gap": 10,
+          "padding": [
+            16,
+            24
+          ],
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "P9fJs9",
+              "name": "Sort-Most Popular",
+              "fill": "$bb-gold",
+              "cornerRadius": 3,
+              "stroke": "$bb-gold",
+              "strokeWidth": 2,
+              "padding": [
+                8,
+                16
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Sx0y6",
+                  "name": "Label",
+                  "fill": "$bb-bg",
+                  "content": "Most Popular",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "SxNG4",
+              "name": "Sort-Recently Added",
+              "fill": "#00000000",
+              "cornerRadius": 3,
+              "stroke": "$bb-gold",
+              "strokeWidth": 2,
+              "padding": [
+                8,
+                16
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "W1imLi",
+                  "name": "Label",
+                  "fill": "#FFD700a6",
+                  "content": "Recently Added",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ZWc0z",
+              "name": "Sort-Alphabetical",
+              "fill": "#00000000",
+              "cornerRadius": 3,
+              "stroke": "$bb-gold",
+              "strokeWidth": 2,
+              "padding": [
+                8,
+                16
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jt3o7",
+                  "name": "Label",
+                  "fill": "#FFD700a6",
+                  "content": "Alphabetical",
+                  "fontFamily": "Nunito",
+                  "fontSize": 14,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "PwJ5M",
+          "name": "Main",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            24,
+            32,
+            32,
+            32
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "f4A7NQ",
+              "name": "ClassicsShelf",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Gtagb",
+                  "name": "ShelfLabel",
+                  "width": 220,
+                  "height": 36,
+                  "fill": "$bb-gold",
+                  "padding": [
+                    4,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "s9ViZn",
+                      "name": "LabelText",
+                      "fill": "$bb-bg",
+                      "content": "⭐ CLASSICS",
+                      "fontFamily": "Bebas Neue",
+                      "fontSize": 24,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "gPOeZ",
+                  "name": "ShelfGrid",
+                  "width": "fill_container",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "id": "R5W9TZ",
+                      "type": "ref",
+                      "ref": "DdQ5S",
+                      "name": "Bluey",
+                      "descendants": {
+                        "k7lL7": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://lumiere-a.akamaihd.net/v1/images/p_bluey_19703_en_us_360x540_54a5827e.jpeg",
+                            "mode": "fill"
+                          }
+                        },
+                        "ePmdi": {
+                          "content": "BLUEY"
+                        },
+                        "MVRr6": {
+                          "content": "DISNEY+"
+                        }
+                      }
+                    },
+                    {
+                      "id": "I7YiM",
+                      "type": "ref",
+                      "ref": "DdQ5S",
+                      "name": "Aladdin",
+                      "descendants": {
+                        "k7lL7": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://lumiere-a.akamaihd.net/v1/images/p_aladdin_19736_en_us_360x540.jpeg",
+                            "mode": "fill"
+                          }
+                        },
+                        "ePmdi": {
+                          "content": "ALADDIN"
+                        },
+                        "MVRr6": {
+                          "content": "DISNEY+"
+                        }
+                      }
+                    },
+                    {
+                      "id": "zIpbs",
+                      "type": "ref",
+                      "ref": "DdQ5S",
+                      "name": "Frozen",
+                      "descendants": {
+                        "k7lL7": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://lumiere-a.akamaihd.net/v1/images/p_frozen_19736_en_us_360x540.jpeg",
+                            "mode": "fill"
+                          }
+                        },
+                        "ePmdi": {
+                          "content": "FROZEN"
+                        },
+                        "MVRr6": {
+                          "content": "DISNEY+"
+                        }
+                      }
+                    },
+                    {
+                      "id": "cz2nZ",
+                      "type": "ref",
+                      "ref": "DdQ5S",
+                      "name": "The Lion King",
+                      "descendants": {
+                        "k7lL7": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://lumiere-a.akamaihd.net/v1/images/p_thelionking_19736_en_us_360x540.jpeg",
+                            "mode": "fill"
+                          }
+                        },
+                        "ePmdi": {
+                          "content": "THE LION KING"
+                        },
+                        "MVRr6": {
+                          "content": "DISNEY+"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "a5KFy",
+              "name": "NewReleasesShelf",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "y2fXfm",
+                  "name": "ShelfLabel",
+                  "width": 260,
+                  "height": 36,
+                  "fill": "$bb-gold",
+                  "padding": [
+                    4,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "E6mbmD",
+                      "name": "LabelText",
+                      "fill": "$bb-bg",
+                      "content": "🆕 NEW RELEASES",
+                      "fontFamily": "Bebas Neue",
+                      "fontSize": 24,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "qFToQ",
+                  "name": "ShelfGrid",
+                  "width": "fill_container",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "id": "E185A",
+                      "type": "ref",
+                      "ref": "DdQ5S",
+                      "name": "K-Pop Demon Hunters",
+                      "descendants": {
+                        "k7lL7": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABT6pTMpLGPaTSRSVg7BKlvMlkKGcASbMsB9i1-RCH7Gp2UtJb8QfJBZXGnZ5h7PGHGF.jpg",
+                            "mode": "fill"
+                          }
+                        },
+                        "ePmdi": {
+                          "content": "K-POP DEMON HUNTERS"
+                        },
+                        "MVRr6": {
+                          "content": "NETFLIX"
+                        }
+                      }
+                    },
+                    {
+                      "id": "EWhs8",
+                      "type": "ref",
+                      "ref": "DdQ5S",
+                      "name": "A Charlie Brown Christmas",
+                      "descendants": {
+                        "k7lL7": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://m.media-amazon.com/images/M/MV5BYTYxNGMyZTYtNWI0NS00NmZjLTg5Y2ItNzFjMDQ1YWVkNWU4XkEyXkFqcGdeQXVyNjE1OTQ0NjA@._V1_.jpg",
+                            "mode": "fill"
+                          }
+                        },
+                        "ePmdi": {
+                          "content": "A CHARLIE BROWN CHRISTMAS"
+                        },
+                        "MVRr6": {
+                          "content": "APPLE TV+"
+                        }
+                      }
+                    },
+                    {
+                      "id": "OmfYp",
+                      "type": "ref",
+                      "ref": "DdQ5S",
+                      "name": "A Charlie Brown Thanksgiving",
+                      "descendants": {
+                        "k7lL7": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "https://m.media-amazon.com/images/M/MV5BOWIwZjAxZTYtNWI0NS00NmZjLTg5Y2ItNzFjMDQ1YWVkNWU4XkEyXkFqcGdeQXVyNjE1OTQ0NjA@._V1_.jpg",
+                            "mode": "fill"
+                          }
+                        },
+                        "ePmdi": {
+                          "content": "A CHARLIE BROWN THANKSGIVING"
+                        },
+                        "MVRr6": {
+                          "content": "APPLE TV+"
+                        }
+                      }
+                    },
+                    {
+                      "id": "lpxR1",
+                      "type": "ref",
+                      "ref": "DdQ5S",
+                      "name": "Coming Soon",
+                      "opacity": 0.55,
+                      "descendants": {
+                        "ePmdi": {
+                          "content": "COMING SOON",
+                          "fill": "#FFD70066"
+                        },
+                        "MVRr6": {
+                          "content": ""
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "CHFoL",
+          "name": "Footer",
+          "width": "fill_container",
+          "stroke": "#FFD70040",
+          "strokeWidth": 2,
+          "padding": [
+            24,
+            24,
+            32,
+            24
+          ],
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "c6x2wj",
+              "name": "Copyright",
+              "fill": "#FFD70073",
+              "content": "© 2026 Family Movie Night",
+              "fontFamily": "Nunito",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "variables": {
     "accent-gold": {
       "type": "color",
@@ -65,118 +1230,5 @@
       "type": "color",
       "value": "#f5f0ffa6"
     }
-  },
-  "children": [
-    {
-      "children": [
-        {
-          "fill": {
-            "colors": [
-              {
-                "color": "#0d0221",
-                "position": 0
-              },
-              {
-                "color": "#6b2fa0",
-                "position": 1
-              }
-            ],
-            "enabled": true,
-            "gradientType": "linear",
-            "rotation": 180,
-            "size": {
-              "height": 1
-            },
-            "type": "gradient"
-          },
-          "height": 300,
-          "id": "njUv9",
-          "name": "CardImage",
-          "type": "frame",
-          "width": 260,
-          "x": 0,
-          "y": 0
-        },
-        {
-          "fill": {
-            "colors": [
-              {
-                "color": "#0d022100",
-                "position": 0
-              },
-              {
-                "color": "#0d0221f2",
-                "position": 0.5
-              },
-              {
-                "color": "#0d0221",
-                "position": 1
-              }
-            ],
-            "enabled": true,
-            "gradientType": "linear",
-            "rotation": 0,
-            "size": {
-              "height": 1
-            },
-            "type": "gradient"
-          },
-          "height": 210,
-          "id": "aKCUo",
-          "name": "GradientOverlay",
-          "type": "frame",
-          "width": 260,
-          "x": 0,
-          "y": 180
-        },
-        {
-          "children": [
-            {
-              "content": "Show Title",
-              "fill": "$text-primary",
-              "fontFamily": "Nunito",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "id": "w2ObeJ",
-              "name": "CardTitle",
-              "type": "text"
-            },
-            {
-              "content": "DISNEY+",
-              "fill": "$text-secondary",
-              "fontFamily": "Nunito",
-              "fontSize": 11,
-              "fontWeight": "600",
-              "id": "IoP9C",
-              "letterSpacing": 1,
-              "name": "CardPlatform",
-              "type": "text"
-            }
-          ],
-          "gap": 4,
-          "id": "oPvU2",
-          "layout": "vertical",
-          "name": "CardLabel",
-          "type": "frame",
-          "width": 236,
-          "x": 12,
-          "y": 318
-        }
-      ],
-      "clip": true,
-      "cornerRadius": "$radius-card",
-      "fill": "$card-bg",
-      "height": 390,
-      "id": "la7iS",
-      "layout": "none",
-      "name": "DreamyCard",
-      "reusable": true,
-      "stroke": "$card-border",
-      "strokeWidth": 1,
-      "type": "frame",
-      "width": 260,
-      "x": 0,
-      "y": 0
-    }
-  ]
+  }
 }

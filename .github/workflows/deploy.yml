@@ -21,11 +21,9 @@ jobs:
 
       - name: Generate config.js from secrets
         run: |
-          cat > config.js << 'EOF'
-          export const SUPABASE_URL = '${{ secrets.SUPABASE_URL }}';
-          export const SUPABASE_ANON_KEY = '${{ secrets.SUPABASE_ANON_KEY }}';
-          export const TMDB_READ_TOKEN = '${{ secrets.TMDB_READ_TOKEN }}';
-          EOF
+          echo "export const SUPABASE_URL = '${{ secrets.SUPABASE_URL }}';" > config.js
+          echo "export const SUPABASE_ANON_KEY = '${{ secrets.SUPABASE_ANON_KEY }}';" >> config.js
+          echo "export const TMDB_READ_TOKEN = '${{ secrets.TMDB_READ_TOKEN }}';" >> config.js
 
       - name: Configure Pages
         uses: actions/configure-pages@v4

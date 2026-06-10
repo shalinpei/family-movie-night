@@ -13,7 +13,9 @@ The app displays a curated grid of 20 show cards (17 real shows + 3 Coming Soon 
 - `index.html` — app shell and card markup
 - `style.css` — all styles for both themes
 - `script.js` — sorting, theme toggling, card interactions
-- `db.js` — Supabase client and click-count logic
+- `db.js` — Supabase client, TMDB poster fetching, and click-count logic
+- `config.js` — generated at deploy time by CI; never committed (see .gitignore)
+- `.github/workflows/deploy.yml` — GitHub Actions workflow that builds and deploys to Pages
 - `images/` — show thumbnails
 
 ## Development
@@ -26,7 +28,29 @@ npx serve .
 python3 -m http.server
 ```
 
-No build step required. Deploy by pushing to the `main` branch (GitHub Pages serves from root).
+For local development, create a `config.js` in the repo root (it is gitignored) with:
+
+```js
+export const SUPABASE_URL = '...';
+export const SUPABASE_ANON_KEY = '...';
+export const TMDB_READ_TOKEN = '...';
+```
+
+## Deployment
+
+**Deployment is handled by GitHub Actions, not the simple "Deploy from branch" Pages setting.**
+
+The workflow at `.github/workflows/deploy.yml` triggers on every push to `main`. It:
+1. Checks out the repo
+2. Generates `config.js` by injecting the GitHub Secrets `SUPABASE_URL`, `SUPABASE_ANON_KEY`, and `TMDB_READ_TOKEN`
+3. Deploys the site to GitHub Pages via the official Pages actions
+
+In the GitHub repo settings, the Pages source must be set to **GitHub Actions** (not "Deploy from a branch").
+
+Secrets to configure in GitHub → Settings → Secrets and variables → Actions:
+- `SUPABASE_URL`
+- `SUPABASE_ANON_KEY`
+- `TMDB_READ_TOKEN`
 
 ## Architecture
 

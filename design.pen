@@ -1,0 +1,182 @@
+{
+  "version": "2.6",
+  "variables": {
+    "accent-gold": {
+      "type": "color",
+      "value": "#fcd34d"
+    },
+    "accent-rose": {
+      "type": "color",
+      "value": "#f9a8d4"
+    },
+    "accent-teal": {
+      "type": "color",
+      "value": "#5eead4"
+    },
+    "bb-bg": {
+      "type": "color",
+      "value": "#0a0a2e"
+    },
+    "bb-blue": {
+      "type": "color",
+      "value": "#0057A8"
+    },
+    "bb-card-bg": {
+      "type": "color",
+      "value": "#0d1340"
+    },
+    "bb-gold": {
+      "type": "color",
+      "value": "#FFD700"
+    },
+    "bg-end": {
+      "type": "color",
+      "value": "#6b2fa0"
+    },
+    "bg-mid": {
+      "type": "color",
+      "value": "#1e0a4a"
+    },
+    "bg-start": {
+      "type": "color",
+      "value": "#0d0221"
+    },
+    "card-bg": {
+      "type": "color",
+      "value": "#FFFFFF12"
+    },
+    "card-border": {
+      "type": "color",
+      "value": "#FFFFFF26"
+    },
+    "card-glow": {
+      "type": "color",
+      "value": "#C084FC59"
+    },
+    "radius-card": {
+      "type": "number",
+      "value": 18
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#f5f0ff"
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": "#f5f0ffa6"
+    }
+  },
+  "children": [
+    {
+      "children": [
+        {
+          "fill": {
+            "colors": [
+              {
+                "color": "#0d0221",
+                "position": 0
+              },
+              {
+                "color": "#6b2fa0",
+                "position": 1
+              }
+            ],
+            "enabled": true,
+            "gradientType": "linear",
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "type": "gradient"
+          },
+          "height": 300,
+          "id": "njUv9",
+          "name": "CardImage",
+          "type": "frame",
+          "width": 260,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "fill": {
+            "colors": [
+              {
+                "color": "#0d022100",
+                "position": 0
+              },
+              {
+                "color": "#0d0221f2",
+                "position": 0.5
+              },
+              {
+                "color": "#0d0221",
+                "position": 1
+              }
+            ],
+            "enabled": true,
+            "gradientType": "linear",
+            "rotation": 0,
+            "size": {
+              "height": 1
+            },
+            "type": "gradient"
+          },
+          "height": 210,
+          "id": "aKCUo",
+          "name": "GradientOverlay",
+          "type": "frame",
+          "width": 260,
+          "x": 0,
+          "y": 180
+        },
+        {
+          "children": [
+            {
+              "content": "Show Title",
+              "fill": "$text-primary",
+              "fontFamily": "Nunito",
+              "fontSize": 14,
+              "fontWeight": "700",
+              "id": "w2ObeJ",
+              "name": "CardTitle",
+              "type": "text"
+            },
+            {
+              "content": "DISNEY+",
+              "fill": "$text-secondary",
+              "fontFamily": "Nunito",
+              "fontSize": 11,
+              "fontWeight": "600",
+              "id": "IoP9C",
+              "letterSpacing": 1,
+              "name": "CardPlatform",
+              "type": "text"
+            }
+          ],
+          "gap": 4,
+          "id": "oPvU2",
+          "layout": "vertical",
+          "name": "CardLabel",
+          "type": "frame",
+          "width": 236,
+          "x": 12,
+          "y": 318
+        }
+      ],
+      "clip": true,
+      "cornerRadius": "$radius-card",
+      "fill": "$card-bg",
+      "height": 390,
+      "id": "la7iS",
+      "layout": "none",
+      "name": "DreamyCard",
+      "reusable": true,
+      "stroke": "$card-border",
+      "strokeWidth": 1,
+      "type": "frame",
+      "width": 260,
+      "x": 0,
+      "y": 0
+    }
+  ]
+}

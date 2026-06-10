@@ -19,11 +19,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate config.js from secrets
+      - name: Generate config.js
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
         run: |
-          echo "export const SUPABASE_URL = '${{ secrets.SUPABASE_URL }}';" > config.js
-          echo "export const SUPABASE_ANON_KEY = '${{ secrets.SUPABASE_ANON_KEY }}';" >> config.js
-          echo "export const TMDB_READ_TOKEN = '${{ secrets.TMDB_READ_TOKEN }}';" >> config.js
+          printf 'export const SUPABASE_URL = "%s";\n' "$SUPABASE_URL" > config.js
+          printf 'export const SUPABASE_ANON_KEY = "%s";\n' "$SUPABASE_ANON_KEY" >> config.js
+          printf 'export const TMDB_READ_TOKEN = "%s";\n' "$TMDB_READ_TOKEN" >> config.js
 
       - name: Debug config.js
         run: cat config.js
